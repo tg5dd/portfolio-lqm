@@ -1,0 +1,22 @@
+.crt-sweep {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 30vh;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 240, 255, 0.05) 50%,
+    transparent 100%
+  );
+  z-index: 9996;
+  pointer-events: none;
+  animation: crt-sweep-anim 6s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+
+@keyframes crt-sweep-anim {
+  0% { transform: translateY(-30vh); }
+  100% { transform: translateY(100vh); }
+}

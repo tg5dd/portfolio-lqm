@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build
+dist/
+*.zip
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# env
+.env
+.env.local
+.env.*.local

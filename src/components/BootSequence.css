@@ -1,0 +1,60 @@
+.boot {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: flicker-in 0.6s var(--ease) both;
+}
+
+.boot__frame {
+  width: min(680px, 100%);
+  font-family: var(--font-mono);
+  color: var(--fg);
+}
+
+.boot__log {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 0 0 24px;
+  white-space: pre-wrap;
+  min-height: 320px;
+  letter-spacing: 0.02em;
+}
+
+.boot__line {
+  color: var(--fg-dim);
+  opacity: 0;
+  animation: fade-up 0.3s var(--ease) forwards;
+}
+
+.boot__line--ok { color: var(--accent-green); }
+.boot__line--warn { color: var(--accent-amber); }
+
+.boot__bar {
+  position: relative;
+  height: 2px;
+  background: var(--border);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.boot__bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+  box-shadow: 0 0 8px var(--accent-cyan);
+  transition: width 0.15s linear;
+}
+
+.boot__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fg-mute);
+}
