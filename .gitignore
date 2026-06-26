@@ -2,8 +2,8 @@
 node_modules/
 .pnpm-store/
 
-# build
-dist/
+# build (kept tracked for GitHub Pages)
+# dist/
 *.zip
 
 # logs
