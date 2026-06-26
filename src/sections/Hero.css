@@ -166,6 +166,42 @@
   animation: fade-up 0.8s var(--ease) 0.2s both;
 }
 
+/* Currently learning */
+.hero__learning {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 32px;
+  animation: fade-up 0.8s var(--ease) 0.18s both;
+}
+
+.hero__learning-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--accent-violet);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.hero__learning-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid rgba(122, 92, 255, 0.4);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent-violet);
+  background: rgba(122, 92, 255, 0.05);
+  letter-spacing: 0.02em;
+  transition: all 0.2s var(--ease);
+}
+
+.hero__learning-tag:hover {
+  background: rgba(122, 92, 255, 0.12);
+  box-shadow: 0 0 8px rgba(122, 92, 255, 0.4);
+}
+
 /* Actions */
 .hero__actions {
   display: flex;

@@ -27,6 +27,7 @@ export const profile = {
   },
   years: { network: 2, qa: 1 },
   gpa: "2.62 / 4.0 (专业前 30%)",
+  learning: ["eBPF 入门", "Golang 在网络工具中的应用", "OWASP Top 10 复现"],
   education: {
     school: "广东石油化工学院",
     major: "网络工程(本科)",

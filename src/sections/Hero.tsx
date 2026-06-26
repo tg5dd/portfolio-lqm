@@ -85,6 +85,15 @@ export default function Hero() {
         </span>
       </h2>
 
+      <div className="hero__learning">
+        <span className="hero__learning-label">// 正在学习</span>
+        {profile.learning.map((l) => (
+          <span key={l} className="hero__learning-tag">
+            {l}
+          </span>
+        ))}
+      </div>
+
       <p className="hero__bio cn">{profile.bio.cn}</p>
 
       <div className="hero__actions">
